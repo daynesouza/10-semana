@@ -8,10 +8,10 @@ import tailsOfIron from '../../assets/jogos/tailsOfIron.jpg';
 
 const store = {
     top: {
-        titulo: 'alura GAMES',
+        titulo: 'Alura GAMES',
     },
     description: {
-        Title: 'Games Store',
+        title: 'Games Store',
         TitleSecond: 'A TUA PLATAFORMA DE Jogos',
         description: 'Jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos',
     },
@@ -37,3 +37,5 @@ const store = {
         ]
     }
 }
+
+export default store;
