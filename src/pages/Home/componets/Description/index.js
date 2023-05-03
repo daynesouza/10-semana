@@ -9,7 +9,7 @@ export default function Description({ title, titleSecond, description }) {
     return (
         <View style={style.description}>
             <View style={style.description__container}>
-                {/* <Image source={logo}/> */}
+                <Image source={logo}/>
                 <Texto style={style.title}> {title} </Texto>
             </View>
             <Texto style={style.titleSecond}> {titleSecond} </Texto>
