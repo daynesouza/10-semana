@@ -1,6 +1,8 @@
-import { Image, View, StyleSheet } from 'react-native';
+import { Image, View, StyleSheet,Dimensions } from 'react-native';
 import Texto from '../../../../componets/Texto';
-import logo from '../../../../../assets/joystick.png';
+import logo from '../../../../../assets/joystick2.png';
+
+const width = Dimensions.get('screen').width;
 
 export default function Description({ title, titleSecond, description }) {
 
@@ -9,7 +11,7 @@ export default function Description({ title, titleSecond, description }) {
     return (
         <View style={style.description}>
             <View style={style.description__container}>
-                <Image source={logo}/>
+                <Image style={style.logo} source={logo}/>
                 <Texto style={style.title}> {title} </Texto>
             </View>
             <Texto style={style.titleSecond}> {titleSecond} </Texto>
@@ -22,14 +24,28 @@ const style = StyleSheet.create({
     description:{
        alignItems: 'center',
        flexDirection: 'column',
-       width: '100%', 
        justifyContent: 'center',
-       padding: '5%'
+       padding: '5%',
+       width: '100%', 
+       rowGap: 15,
     },
-    description__container:{},
+    description__container:{
+        alignItems:'center',
+        flexDirection: 'row',
+        justifyContent:'flex-start',
+        width:'100%',
+    },
+    logo:{
+        width: 100,
+        height: 100,
+    },
     title:{
         fontSize: 24,
     },
-    titleSecond:{},
-    text:{}
+    titleSecond:{
+        fontSize:16,
+    },
+    text:{
+        fontSize:16,
+    }
 })

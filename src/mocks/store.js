@@ -12,7 +12,7 @@ const store = {
     },
     description: {
         title: 'Games Store',
-        TitleSecond: 'A TUA PLATAFORMA DE Jogos',
+        titleSecond: 'A TUA PLATAFORMA DE JOGOS',
         description: 'Jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos, jogos',
     },
     itens: {
