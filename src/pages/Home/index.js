@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet } from 'react-native';
+import { FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 
 import Description from "./componets/Description";
 import Top from "./componets/Top";
@@ -22,6 +22,15 @@ export default function Home({ top, description, itens }) {
                         </>
                     )
                 }}
+                ListFooterComponent={() => {
+                    return (
+                        <>
+                            <TouchableOpacity style={style.botao} onPress={() => { }}>
+                                <Texto style={style.textoBotao}>Comprar</Texto>
+                            </TouchableOpacity>
+                        </>
+                    )
+                }}
             />
         </>
     )
@@ -32,5 +41,20 @@ const style = StyleSheet.create({
         fontSize: 24,
         textAlign: 'center',
         width: '100%'
-    }
+    },
+    botao: {
+        alignSelf: 'center',
+        marginTop: 16,
+        backgroundColor: "#000000",
+        paddingVertical: 16,
+        borderRadius: 6,
+        width:'80%'
+    },
+    textoBotao: {
+        textAlign: "center",
+        color: "#ffffff",
+        fontSize: 16,
+        lineHeight: 26,
+        fontWeight: "bold",
+    },
 })
