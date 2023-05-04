@@ -13,7 +13,7 @@ export default function Item({ item: { id, nome, photo } }) {
 const style = StyleSheet.create({
     item: {
         alignItems: 'center',
-        borderRadius: 10,
+        borderRadius: 5,
         borderBottomColor: "#ECECEC",
         backgroundColor: 'white',
         flexDirection: 'row',
@@ -22,8 +22,8 @@ const style = StyleSheet.create({
         margin: '5%'
     },
     photo: {
-        borderTopLeftRadius: 10,
-        borderBottomLeftRadius: 10,
+        borderTopLeftRadius: 5,
+        borderBottomLeftRadius: 5,
         height: 46,
         width: 46,
     },
