@@ -6,8 +6,6 @@ const width = Dimensions.get('screen').width;
 
 export default function Description({ title, titleSecond, description }) {
 
-    console.log(logo);
-
     return (
         <View style={style.description}>
             <View style={style.description__container}>

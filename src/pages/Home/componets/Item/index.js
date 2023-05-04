@@ -1,7 +1,7 @@
-import { View, Image, StyleSheet } from 'react-native-web';
+import { View, Image, StyleSheet } from 'react-native';
 import Texto from '../../../../componets/Texto';
 
-export default function Item({ item: { nome, photo } }) {
+export default function Item({ item: { id, nome, photo } }) {
     return (
         <View style={style.item}>
             <Image source={photo} style={style.photo} />

@@ -12,7 +12,7 @@ export default function Home({ top, description, itens }) {
             <FlatList
                 data={itens.list}
                 renderItem={Item}
-                keyExtractor={({ nome }) => nome}
+                keyExtractor={({ id }) => id }
                 ListHeaderComponent={() => {
                     return (
                         <>

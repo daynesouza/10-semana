@@ -19,18 +19,22 @@ const store = {
         title: 'Novidades',
         list: [
             {
+                id: 1,
                 nome: 'Blasphemous',
                 photo: blasphemous
             },
             {
+                id: 2,
                 nome: 'Civilization VI',
                 photo: civilizationVI
             },
             {
+                id: 3,
                 nome: 'Octopath Travaler II',
                 photo: octopathTravaler2
             },
             {
+                id: 4,
                 nome: 'Tails Of Iron',
                 photo: tailsOfIron
             }
